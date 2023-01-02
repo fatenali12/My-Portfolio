@@ -1,0 +1,133 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient($mainColor, $secondaryColor);
+}
+
+ ::selection {
+    color: $mainColor;
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.up-btn {
+    position: fixed;
+    bottom: 140px;
+    right: 18px;
+    background: linear-gradient($mainColor, $secondaryColor);
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+    display: none;
+    z-index: 2;
+    &:hover {
+        transform: scale(.8);
+    }
+}
+
+// .up-btn.show {
+//     right: 30px;
+// }
+// body {
+//     font-family: 'Oswald', sans-serif;
+//     // font-family: 'Poppins', sans-serif;
+//     font-family: 'Roboto', sans-serif;
+// }
+.dark-mood {
+    background: linear-gradient($background, $background) !important;
+    // color: linear-gradient($mainColor, $secondaryColor);
+    transition: $mainTransation ease-in-out;
+    h1,
+    p {
+        color: $textColor !important;
+    }
+    .about-title {
+        color: $mainColor !important;
+    }
+    // .contact-btn {
+    //     background-image: linear-gradient($mainColor, $secondaryColor);
+    // }
+    // .title-name,
+    // .about-title {
+    //     color: $textColor !important;
+    //     font-weight: bold;
+    //     background-color: $mainColor;
+    //     background-image: linear-gradient($mainColor, $secondaryColor);
+    //     background-size: 100%;
+    //     background-clip: text;
+    //     -webkit-background-clip: text;
+    //     -moz-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //     -moz-text-fill-color: transparent;
+    // }
+    .sun-moon-wrapper {
+        transform: rotate(336deg);
+        .sun-icon {
+            opacity: 1 !important;
+            fill: $iconSecondColor!important;
+        }
+        .moon-icon {
+            opacity: 0;
+        }
+    }
+    .contact-input {
+        &:focus {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.box-shadow {
+    -webkit-box-shadow: 10px 20px 40px #e8b7d463;
+    -moz-box-shadow: 10px 20px 40px #e8b7d463;
+    box-shadow: 10px 20px 40px #e8b7d463;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+    border-radius: 10px;
+}
+
+.butten {
+    // background-color: $secondaryColor;
+    border-radius: 10px;
+    // background: $secondaryColor;
+    background: linear-gradient($mainColor, $secondaryColor);
+    border: 1px dashed $mainColor !important;
+    outline: none;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+    &:hover,
+    &:focus {
+        transform: scale(.8);
+        border-style: solid !important;
+        // background-image: linear-gradient($mainColor, $secondaryColor);
+        -webkit-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        -moz-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+    }
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+}

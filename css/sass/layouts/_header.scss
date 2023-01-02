@@ -1,0 +1,80 @@
+.navbar {
+    // background-color: #c5e1e4 !important;
+    background: linear-gradient($mainColor, $secondaryColor);
+    .port-logo {
+        color: $mainColor;
+    }
+    .blueColor {
+        color: $secondaryColor;
+    }
+    // @media (max-width:992px) {
+    //     .port-logo {
+    //         color: $secondaryColor;
+    //     }
+    // }
+    .nav-item {
+        .nav-link {
+            position: relative;
+            color: #f1e7e7;
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 0%;
+                height: 3px;
+                background: linear-gradient($secondaryColor, $mainColor) !important;
+                -webkit-transition: .4s all;
+                -ms-transition: .4s all;
+                transition: .4s all;
+                margin-top: 5px;
+            }
+            &:hover {
+                padding-left: 2rem;
+                color: #fff;
+            }
+            &:hover:after {
+                width: 65%;
+            }
+            @media (max-width:992px) {
+                &:hover:after {
+                    width: 10%;
+                }
+            }
+            @media (max-width:576px) {
+                &:hover:after {
+                    width: 18%;
+                }
+            }
+        }
+    }
+    .sun-moon-wrapper {
+        position: relative;
+        top: 0;
+        height: 10vmin;
+        cursor: pointer;
+        transform: rotate(0);
+        .moon-icon,
+        .sun-icon {
+            fill: $iconColor !important;
+            position: absolute;
+            height: 33px;
+            -webkit-transition: opacity, fill, .4s all;
+            -ms-transition: opacity, fill, .4s all;
+            transition: opacity, fill, .4s all;
+            &:hover,
+            &:focus {
+                transform: scale(1) !important;
+                width: 30px !important;
+                transform: rotate(1turn);
+            }
+        }
+        .moon-icon {
+            bottom: 22%;
+        }
+        .sun-icon {
+            top: 35%;
+            opacity: 0;
+            margin-right: 50px;
+        }
+    }
+}

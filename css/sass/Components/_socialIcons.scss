@@ -1,0 +1,24 @@
+.socialIcon {
+    width: 30px;
+    height: 30px;
+    background: $mainColor;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: $secondaryColor;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+    &:hover,
+    &:focus {
+        color: $mainColor;
+        background: $secondaryColor;
+        -webkit-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        -moz-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        -webkit-transition: $mainTransation;
+        -ms-transition: $mainTransation;
+        transition: $mainTransation;
+        border-radius: 10px;
+    }
+}

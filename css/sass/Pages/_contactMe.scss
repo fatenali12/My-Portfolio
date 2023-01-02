@@ -1,0 +1,240 @@
+    .contact-me {
+        .contact-details {
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            &::after {
+                content: attr(data-over);
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient($mainColor, $secondaryColor);
+                border-radius: 5px;
+                // width: 100%;
+                // height: 100%;
+                opacity: .9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateX(calc(-100% - -.3rem));
+                -webkit-transition: transform 1.2s ease-in-out;
+                -ms-transition: transform 1.2s ease-in-out;
+                transition: transform 1.2s ease-in-out;
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            &:hover::after {
+                transform: translateX(0);
+            }
+            .info-icon {
+                background: $mainColor;
+                color: $secondaryColor;
+                padding: .5rem;
+                border-radius: 50%;
+            }
+            span {
+                padding-top: 3px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            .contact-form {
+                width: 50% !important;
+            }
+        }
+        .contact-title {
+            background: linear-gradient($mainColor, $secondaryColor);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        .contact-input {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid $mainColor;
+            background-color: transparent;
+            &:focus {
+                // outline: none;
+                box-shadow: none;
+            }
+            &:hover {
+                -webkit-box-shadow: 10px 20px 30px #e8b7d463;
+                -moz-box-shadow: 10px 20px 30px #e8b7d463;
+                box-shadow: 10px 20px 30px #e8b7d463;
+                -webkit-transition: $mainTransation;
+                -ms-transition: $mainTransation;
+                transition: $mainTransation;
+                border-radius: 10px;
+            }
+            &::placeholder {
+                color: $secondaryColor;
+                font-size: 16px;
+            }
+        }
+        // @media (max-width:576px) {
+        //     .contact-details {
+        //         width: 200px;
+        //         text-align: center;
+        //     }
+        // }
+        // Left
+        .fadeInLeft {
+            -webkit-animation: fadeInLeft 1.2s both;
+            -moz-animation: fadeInLeft 1.2s both;
+            -o-animation: fadeInLeft 1.2s both;
+            animation: fadeInLeft 1.2s both;
+            -webkit-transition: $mainTransation ease;
+            -ms-transition: $mainTransation ease;
+            transition: $mainTransation ease;
+        }
+        @-webkit-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-moz-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-o-keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        //Up
+        .fadeInUp {
+            -webkit-animation: fadeInUp 1.2s both;
+            -moz-animation: fadeInUp 1.2s both;
+            -o-animation: fadeInUp 1.2s both;
+            animation: fadeInUp 1.2s both;
+            -webkit-transition: $mainTransation ease;
+            -ms-transition: $mainTransation ease;
+            transition: $mainTransation ease;
+        }
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-moz-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-o-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        //Right
+        .fadeInRight {
+            -webkit-animation: fadeInRight 1.2s both;
+            -moz-animation: fadeInRight 1.2s both;
+            -o-animation: fadeInRight 1.2s both;
+            animation: fadeInRight 1.2s both;
+            -webkit-transition: $mainTransation ease;
+            -ms-transition: $mainTransation ease;
+            transition: $mainTransation ease;
+        }
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-moz-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @-o-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translate(0);
+            }
+        }
+    }

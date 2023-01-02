@@ -1,0 +1,294 @@
+.skills {
+    .img-box {
+        img {
+            width: 114px;
+            height: 100px;
+        }
+    }
+    .skill-box {
+        &:hover {
+            transform: scale(1.2) !important;
+        }
+        position: relative;
+        .skill-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient($mainColor, $secondaryColor);
+            opacity: 0;
+            border-radius: 5px;
+            -webkit-transition: opacity $mainTransation ease-in-out;
+            -ms-transition: opacity $mainTransation ease-in-out;
+            transition: opacity $mainTransation ease-in-out;
+            .skill-progress {
+                width: 120px;
+                height: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-top: 8rem;
+                background-color: #f6f6f6;
+                // overflow: hidden;
+                -webkit-transition: $mainTransation;
+                -ms-transition: $mainTransation;
+                transition: $mainTransation;
+                span {
+                    width: 0;
+                    height: 100%;
+                    display: block;
+                    -webkit-transition: $mainTransation;
+                    -ms-transition: $mainTransation;
+                    transition: $mainTransation;
+                    border-radius: 5px;
+                    position: relative;
+                    &::before {
+                        content: attr(data-progress);
+                        position: absolute;
+                        // background-image: linear-gradient($mainColor, $secondaryColor);
+                        color: #fff;
+                        top: -38px;
+                        right: -14px;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        width: 30px;
+                        padding: 4px 0;
+                        text-align: center;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        border-style: solid;
+                        border-width: 8px;
+                        border-color: $secondaryColor transparent transparent;
+                        right: -7px;
+                        top: -13px;
+                    }
+                }
+            }
+            .progress-html {
+                span.progress-html {
+                    background-color: #F16529;
+                    &::before {
+                        // background-color: #F16529;
+                        background: linear-gradient( $mainColor, #F16529);
+                    }
+                    &::after {
+                        border-color: #F16529 transparent transparent;
+                    }
+                }
+            }
+            .progress-Gulp {
+                span.progress-Gulp {
+                    background-color: #D44B48;
+                    &::before {
+                        // background-color: #D44B48;
+                        background: linear-gradient( $mainColor, #D44B48);
+                    }
+                    &::after {
+                        border-color: #D44B48 transparent transparent;
+                    }
+                }
+            }
+            .progress-css {
+                span.progress-css {
+                    background-color: #3698D5;
+                    &::before {
+                        // background-color: #3698D5;
+                        background: linear-gradient( $mainColor, #3698D5);
+                    }
+                    &::after {
+                        border-color: #3698D5 transparent transparent;
+                    }
+                }
+            }
+            .progress-sass {
+                span.progress-sass {
+                    background-color: #CD6799;
+                    &::before {
+                        background: linear-gradient( $mainColor, #3698D5);
+                        background: linear-gradient( $secondaryColor, #CD6799);
+                    }
+                    &::after {
+                        border-color: #CD6799 transparent transparent;
+                    }
+                }
+            }
+            .progress-js {
+                span,
+                .progress-js {
+                    background-color: #FBE01C;
+                    &::before {
+                        // background-color: #FBE01C;
+                        background: linear-gradient( $mainColor, #FBE01C);
+                        color: #000;
+                    }
+                    &::after {
+                        border-color: #FBE01C transparent transparent;
+                    }
+                }
+            }
+            .progress-jquery {
+                span.progress-jquery {
+                    background-color: #076AAD;
+                    &::before {
+                        // background-color: #076AAD;
+                        background: linear-gradient( $mainColor, #076AAD);
+                    }
+                    &::after {
+                        border-color: #076AAD transparent transparent;
+                    }
+                }
+            }
+            .progress-vue {
+                span.progress-vue {
+                    background-color: #41B783;
+                    &::before {
+                        // background-color: #41B783;
+                        background: linear-gradient( $mainColor, #41B783);
+                    }
+                    &::after {
+                        border-color: #41B783 transparent transparent;
+                    }
+                }
+            }
+            .progress-bootstrap {
+                span.progress-bootstrap {
+                    background-color: #5E3B7F;
+                    &::before {
+                        // background-color: #5E3B7F;
+                        background: linear-gradient( $mainColor, #5E3B7F);
+                    }
+                    &::after {
+                        border-color: #5E3B7F transparent transparent;
+                    }
+                }
+            }
+            .progress-git {
+                span.progress-git {
+                    background-color: #F05133;
+                    &::before {
+                        background-color: #F05133;
+                        // background-image: linear-gradient( $mainColor, #F05133);
+                    }
+                    &::after {
+                        border-color: #F05133 transparent transparent;
+                    }
+                }
+            }
+            .progress-github {
+                span.progress-github {
+                    background-color: #000;
+                    &::before {
+                        // background-color: #fff;
+                        background: linear-gradient( $mainColor, #000);
+                        color: #fff;
+                    }
+                    &::after {
+                        border-color: #000 transparent transparent;
+                    }
+                }
+            }
+            .progress-php {
+                span.progress-php {
+                    background-color: #8892BE;
+                    &::before {
+                        // background-color: #8892BE;
+                        background: linear-gradient( $mainColor, #8892BE);
+                    }
+                    &::after {
+                        border-color: #8892BE transparent transparent;
+                    }
+                }
+            }
+            .progress-laravel {
+                span.progress-laravel {
+                    background-color: #FB503C;
+                    &::before {
+                        // background-color: #FB503C;
+                        background: linear-gradient( $mainColor, #FB503C);
+                    }
+                    &::after {
+                        border-color: #FB503C transparent transparent;
+                    }
+                }
+            }
+            .progress-sql {
+                span.progress-sql {
+                    background-color: #5279A8;
+                    &::before {
+                        background-color: #5279A8;
+                        background: linear-gradient( $mainColor, #5279A8);
+                    }
+                    &::after {
+                        border-color: #5279A8 transparent transparent;
+                    }
+                }
+            }
+        }
+    }
+    .skill-box:hover .skill-overlay {
+        opacity: 0.6;
+    }
+    // .skill-animate {
+    //     opacity: 0;
+    // }
+    .show-skills {
+        -webkit-animation: showskill 2s both;
+        -moz-animation: showskill 2s both;
+        -o-animation: showskill 2s both;
+        animation: showskill 2s both;
+        -webkit-transition: $mainTransation ease-in;
+        -ms-transition: $mainTransation ease-in;
+        transition: $mainTransation ease-in;
+    }
+    @-webkit-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @-moz-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @-o-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+}

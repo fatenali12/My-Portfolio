@@ -1,0 +1,111 @@
+        .about-me {
+            .about-title {
+                color: $mainColor;
+            }
+            p {
+                font-size: 18px;
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+            @media (max-width:992px) {
+                .aboutimg-box {
+                    text-align: center;
+                    img {
+                        width: 388px !important;
+                        // margin-top: 40px !important;
+                    }
+                }
+                .about-info {
+                    text-align: center !important;
+                    padding-top: 0 !important;
+                    h1 {
+                        padding-top: 0 !important;
+                        margin-top: 0 !important;
+                    }
+                    .social-icon {
+                        justify-content: center;
+                    }
+                }
+            }
+            @media (max-width:576px) {
+                .aboutimg-box {
+                    text-align: center !important;
+                    // img {
+                    //     width: 400px !important;
+                    // }
+                }
+                .about-info {
+                    text-align: center !important;
+                    padding-top: 0 !important;
+                    h1 {
+                        padding-top: 0 !important;
+                        margin-top: 0 !important;
+                    }
+                    .social-icon {
+                        justify-content: center;
+                    }
+                }
+            }
+            // .animate1 {
+            //     opacity: 0;
+            // }
+            .show {
+                -webkit-animation: showitems 2s both;
+                -moz-animation: showitems 2s both;
+                -o-animation: showitems 2s both;
+                animation: showitems 2s both;
+                -webkit-transition: $mainTransation ease-in;
+                -ms-transition: $mainTransation ease-in;
+                transition: $mainTransation ease-in;
+            }
+            @-webkit-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @-moz-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @-o-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+        }

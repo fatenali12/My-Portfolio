@@ -1,0 +1,211 @@
+.TitleCom {
+    background: linear-gradient($mainColor, $secondaryColor);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 9%;
+        top: 27px;
+        background: linear-gradient($mainColor, $secondaryColor);
+    }
+    &::before {
+        // right: 371px;
+        // right: 360px;
+        right: 340px;
+    }
+    &::after {
+        // left: 373px;
+        // left: 359px
+        left: 341px
+    }
+    .circle-left,
+    .circle-right {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background: linear-gradient($mainColor, $secondaryColor);
+        bottom: 0;
+        top: 23px;
+        right: 16px;
+        border-radius: 50%;
+    }
+    .circle-left {
+        // left: 459px;
+        left: 441px;
+    }
+    .circle-right {
+        // right: 459px;
+        right: 442px;
+    }
+}
+
+@media (max-width:1199px) {
+    .TitleCom {
+        &::before {
+            // right: 292px;
+            right: 268px;
+        }
+        &::after {
+            // left: 287px;
+            left: 267px;
+        }
+        .circle-left {
+            // left: 370px;
+            left: 352px;
+        }
+        .circle-right {
+            // right: 369px;
+            right: 352px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .TitleCom {
+        &::before {
+            // right: 192px;
+            right: 178px;
+        }
+        &::after {
+            // left: 195px;
+            left: 176px;
+        }
+        .circle-left {
+            // left: 258px;
+            left: 240px;
+        }
+        .circle-right {
+            // right: 256px;
+            right: 241px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .TitleCom {
+        &::before,
+        &::after {
+            width: 13%;
+            top: 23px;
+        }
+        .circle-left,
+        .circle-right {
+            top: 19px;
+        }
+        &::before {
+            // right: 108px;
+            right: 93px;
+        }
+        &::after {
+            // left: 100px;
+            left: 89px;
+        }
+        .circle-left {
+            // left: 169px;
+            left: 158px;
+        }
+        .circle-right {
+            // right: 170px;
+            right: 162px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .TitleCom {
+        &::before,
+        &::after {
+            width: 13%;
+            top: 23px;
+        }
+        .circle-left,
+        .circle-right {
+            top: 19px;
+        }
+        &::before {
+            // right: 99px;
+            right: 87px;
+        }
+        &::after {
+            // left: 99px;
+            left: 85px;
+        }
+        .circle-left {
+            // left: 164px;
+            left: 149px;
+        }
+        .circle-right {
+            // right: 164px;
+            right: 152px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .TitleCom {
+        &::before,
+        &::after {
+            width: 17%;
+            top: 23px;
+        }
+        .circle-left,
+        .circle-right {
+            top: 19px;
+        }
+        &::before {
+            // right: 44px;
+            right: 42px
+        }
+        &::after {
+            // left: 44px;
+            left: 33px;
+        }
+        .circle-left {
+            // left: 107px;
+            left: 96px;
+        }
+        .circle-right {
+            // right: 105px;
+            right: 96px;
+        }
+    }
+}
+
+@media (max-width:415px) {
+    .TitleCom {
+        &::before,
+        &::after {
+            width: 17%;
+            top: 23px;
+        }
+        .circle-left,
+        .circle-right {
+            top: 19px;
+        }
+        &::before {
+            // right: 44px;
+            right: 34px;
+        }
+        &::after {
+            // left: 44px;
+            left: 28px;
+        }
+        .circle-left {
+            // left: 107px;
+            left: 94px;
+        }
+        .circle-right {
+            // right: 105px;
+            // right: 96px;
+            right: 88px;
+        }
+    }
+}
